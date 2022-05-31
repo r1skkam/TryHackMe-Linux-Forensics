@@ -1,0 +1,11 @@
+ubuntu@Linux4n6:~$ sudo last -f /var/log/wtmp
+reboot   system boot  5.4.0-1029-aws   Tue May 31 21:15   still running
+reboot   system boot  5.4.0-1029-aws   Sun Apr 17 21:00   still running
+reboot   system boot  5.4.0-1029-aws   Sun Apr 17 20:50 - 21:00  (00:10)
+reboot   system boot  5.4.0-1029-aws   Sun Apr 17 09:40 - 09:43  (00:03)
+reboot   system boot  5.4.0-1029-aws   Sun Apr 17 05:01 - 09:23  (04:22)
+reboot   system boot  5.4.0-1029-aws   Sat Apr 16 22:51 - 23:10  (00:18)
+reboot   system boot  5.4.0-1029-aws   Sat Apr 16 20:10 - 21:43  (01:32)
+
+wtmp begins Sat Apr 16 20:10:29 2022
+ubuntu@Linux4n6:~$ 
