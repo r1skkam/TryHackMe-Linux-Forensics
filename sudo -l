@@ -1,0 +1,11 @@
+ubuntu@Linux4n6:~$ sudo -l
+Matching Defaults entries for ubuntu on Linux4n6:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User ubuntu may run the following commands on Linux4n6:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+    (ALL) NOPASSWD: ALL
+    (ALL) NOPASSWD: ALL
+    (ALL) NOPASSWD: ALL
+ubuntu@Linux4n6:~$ 
