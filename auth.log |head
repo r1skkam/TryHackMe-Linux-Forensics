@@ -1,0 +1,12 @@
+ubuntu@Linux4n6:~$ cat /var/log/auth.log |head
+May 31 21:15:19 Linux4n6 systemd: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+May 31 21:15:19 Linux4n6 runuser: pam_unix(runuser-l:session): session opened for user ubuntu by (uid=0)
+May 31 21:15:20 Linux4n6 sudo: pam_unix(sudo:session): session closed for user root
+May 31 21:15:20 Linux4n6 CRON[790]: pam_unix(cron:session): session closed for user ubuntu
+May 31 21:15:21 Linux4n6 runuser: pam_unix(runuser-l:session): session closed for user ubuntu
+May 31 21:15:21 Linux4n6 sudo: pam_unix(sudo:session): session closed for user root
+May 31 21:15:21 Linux4n6 CRON[791]: pam_unix(cron:session): session closed for user ubuntu
+May 31 21:15:21 Linux4n6 lightdm: pam_unix(lightdm-greeter:session): session opened for user lightdm by (uid=0)
+May 31 21:15:21 Linux4n6 systemd-logind[624]: New session c1 of user lightdm.
+May 31 21:15:21 Linux4n6 systemd: pam_unix(systemd-user:session): session opened for user lightdm by (uid=0)
+ubuntu@Linux4n6:~$ 
