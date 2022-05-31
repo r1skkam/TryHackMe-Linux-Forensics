@@ -31,4 +31,4 @@
 [$ sudo last -f /var/log/wtmp](https://github.com/r1skkam/TryHackMe-Linux-Forensics/blob/main/wtmp)
 
 ### Authentication logs
-
+[$ cat /var/log/auth.log |tail](https://github.com/r1skkam/TryHackMe-Linux-Forensics/blob/main/auth.log)
