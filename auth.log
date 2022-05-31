@@ -1,0 +1,12 @@
+ubuntu@Linux4n6:~$ cat /var/log/auth.log |tail
+May 31 21:17:01 Linux4n6 CRON[1888]: pam_unix(cron:session): session closed for user root
+May 31 21:30:01 Linux4n6 CRON[2084]: pam_unix(cron:session): session opened for user root by (uid=0)
+May 31 21:30:01 Linux4n6 CRON[2084]: pam_unix(cron:session): session closed for user root
+May 31 21:32:21 Linux4n6 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=list
+May 31 21:33:26 Linux4n6 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/cat /etc/sudoers
+May 31 21:33:26 Linux4n6 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 31 21:33:26 Linux4n6 sudo: pam_unix(sudo:session): session closed for user root
+May 31 21:53:07 Linux4n6 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/last -f /var/log/wtmp
+May 31 21:53:07 Linux4n6 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 31 21:53:07 Linux4n6 sudo: pam_unix(sudo:session): session closed for user root
+ubuntu@Linux4n6:~$ 
