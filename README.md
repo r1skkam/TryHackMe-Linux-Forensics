@@ -134,4 +134,4 @@ Jun  1 20:29:58 Linux4n6 systemd-hostnamed[655]: Changed host name to 'ip-10-10-
 ubuntu@Linux4n6:~$ 
 ```
 ## Task 8 Conclusion
-[Linux Forensics Cheatsheet - deploy](
+[Linux Forensics Cheatsheet - deploy](https://github.com/r1skkam/TryHackMe-Linux-Forensics/blob/main/LinuxForensicsCheatsheet.pdf)
