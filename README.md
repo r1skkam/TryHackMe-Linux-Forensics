@@ -86,3 +86,52 @@ cat .bash_history
 sudo apt-get install apache2
 tryhackme@Linux4n6:~$ 
 ```
+```
+ubuntu@Linux4n6:~$ cat /var/log/auth.log.1 |grep net-tools
+Apr 17 15:54:52 tryhackme sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt-get install net-tools
+ubuntu@Linux4n6:~$
+```
+## Task 7 Log files
+```
+ubuntu@Linux4n6:~$ cat /var/log/syslog* |grep hostname
+Jun  1 20:30:34 Linux4n6 systemd[1]: systemd-hostnamed.service: Succeeded.
+Apr 17 00:01:30 tryhackme dbus-daemon[539]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Apr 17 00:01:30 tryhackme NetworkManager[540]: <info>  [1650153690.6203] hostname: hostname: using hostnamed
+Apr 17 00:01:30 tryhackme NetworkManager[540]: <info>  [1650153690.6204] hostname: hostname changed from (none) to "tryhackme"
+Apr 17 00:01:31 tryhackme systemd-hostnamed[638]: Changed host name to 'ip-10-10-51-7'
+Apr 17 00:02:05 tryhackme systemd[1]: systemd-hostnamed.service: Succeeded.
+Apr 17 04:40:12 tryhackme systemd-resolved[490]: Using system hostname 'tryhackme'.
+Apr 17 04:40:12 tryhackme kernel: [    3.511370] systemd[1]: Set hostname to <tryhackme>.
+Apr 17 04:40:12 tryhackme dbus-daemon[539]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.3' (uid=100 pid=443 comm="/lib/systemd/systemd-networkd " label="unconfined")
+Apr 17 04:40:12 tryhackme dbus-daemon[539]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Apr 17 04:40:12 tryhackme NetworkManager[540]: <info>  [1650170412.7584] hostname: hostname: using hostnamed
+Apr 17 04:40:12 tryhackme NetworkManager[540]: <info>  [1650170412.7585] hostname: hostname changed from (none) to "tryhackme"
+Apr 17 04:40:13 tryhackme systemd-hostnamed[607]: Changed host name to 'ip-10-10-51-7'
+Apr 17 04:40:47 tryhackme systemd[1]: systemd-hostnamed.service: Succeeded.
+Apr 17 15:50:17 tryhackme systemd-resolved[502]: Using system hostname 'tryhackme'.
+Apr 17 15:50:17 tryhackme kernel: [    2.877851] systemd[1]: Set hostname to <tryhackme>.
+Apr 17 15:50:17 tryhackme dbus-daemon[582]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.3' (uid=100 pid=457 comm="/lib/systemd/systemd-networkd " label="unconfined")
+Apr 17 15:50:18 tryhackme dbus-daemon[582]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Apr 17 15:50:18 tryhackme NetworkManager[583]: <info>  [1650210618.1019] hostname: hostname: using hostnamed
+Apr 17 15:50:18 tryhackme NetworkManager[583]: <info>  [1650210618.1019] hostname: hostname changed from (none) to "tryhackme"
+Apr 17 15:50:18 tryhackme systemd-hostnamed[643]: Changed host name to 'ip-10-10-178-149'
+Apr 17 15:50:52 tryhackme systemd[1]: systemd-hostnamed.service: Succeeded.
+Apr 17 21:00:59 Linux4n6 systemd-resolved[491]: Using system hostname 'Linux4n6'.
+Apr 17 21:00:59 Linux4n6 kernel: [    2.728250] systemd[1]: Set hostname to <Linux4n6>.
+Apr 17 21:00:59 Linux4n6 dbus-daemon[539]: [system] Activating systemd to hand-off: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.2' (uid=100 pid=442 comm="/lib/systemd/systemd-networkd " label="unconfined")
+Apr 17 21:00:59 Linux4n6 dbus-daemon[539]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Apr 17 21:00:59 Linux4n6 NetworkManager[542]: <info>  [1650211259.9857] hostname: hostname: using hostnamed
+Apr 17 21:00:59 Linux4n6 NetworkManager[542]: <info>  [1650211259.9857] hostname: hostname changed from (none) to "Linux4n6"
+Apr 17 21:01:00 Linux4n6 systemd-hostnamed[599]: Changed host name to 'ip-10-10-178-149'
+Apr 17 21:01:33 Linux4n6 systemd[1]: systemd-hostnamed.service: Succeeded.
+Jun  1 20:29:57 Linux4n6 systemd-resolved[512]: Using system hostname 'Linux4n6'.
+Jun  1 20:29:57 Linux4n6 kernel: [    2.977103] systemd[1]: Set hostname to <Linux4n6>.
+Jun  1 20:29:57 Linux4n6 dbus-daemon[591]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.3' (uid=100 pid=466 comm="/lib/systemd/systemd-networkd " label="unconfined")
+Jun  1 20:29:58 Linux4n6 dbus-daemon[591]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Jun  1 20:29:58 Linux4n6 NetworkManager[592]: <info>  [1654097398.3030] hostname: hostname: using hostnamed
+Jun  1 20:29:58 Linux4n6 NetworkManager[592]: <info>  [1654097398.3030] hostname: hostname changed from (none) to "Linux4n6"
+Jun  1 20:29:58 Linux4n6 systemd-hostnamed[655]: Changed host name to 'ip-10-10-53-56'
+ubuntu@Linux4n6:~$ 
+```
+## Task 8 Conclusion
+[Linux Forensics Cheatsheet - deploy](
